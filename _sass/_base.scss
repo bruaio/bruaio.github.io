@@ -111,17 +111,17 @@ aside {
         background-color: transparent;
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            color: $theme-primary;
             &:hover,
             &:focus {
-                color: white;
+                color: rgba(rgb(79, 79, 79), .7);
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            color: $theme-primary;
             &:hover {
-                color: white;
+                color: rgba(rgb(79, 79, 79), .7);
             }
         }
         &.affix {
@@ -129,7 +129,6 @@ aside {
             border-color: rgba($theme-dark, .5);
             .navbar-header .navbar-brand {
                 color: $theme-primary;
-                font-size: 14px;
                 &:hover,
                 &:focus {
                     color: darken($theme-primary, 10%);
@@ -137,7 +136,7 @@ aside {
             }
             .nav > li > a,
             .nav > li > a:focus {
-                color: $theme-dark;
+                color: $theme-primary;
                 &:hover {
                     color: $theme-primary;
                 }
@@ -154,9 +153,9 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header5.png');
+    background-image: url('../img/header6.png');
     text-align: center;
-    color: white;
+    color: rgb(240,95,64);
     .header-content {
         position: relative;
         text-align: center;
@@ -173,7 +172,7 @@ header {
             }
             p {
                 font-weight: normal;
-                color: rgba(rgb(255, 255, 255), .7);
+                color: rgba(rgb(79, 79, 79), .7);
                 font-size: 20px;
                 margin-bottom: 50px;
             }
